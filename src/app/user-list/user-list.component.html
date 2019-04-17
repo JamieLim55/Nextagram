@@ -1,0 +1,6 @@
+<h4>User List</h4>
+<ul>
+  <li *ngFor="let user of users">
+    <a routerLink="/profile/{{ user.id }}">{{ user.username }} <img src="{{ user.profileImage }}"/> </a>
+  </li> 
+</ul>

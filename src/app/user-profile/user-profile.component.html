@@ -1,0 +1,12 @@
+<div *ngIf="specificProfileImage">
+
+    <h4>User Profile</h4>
+
+    <a routerLink="/">
+    <div *ngFor="let profileImage of specificProfileImage">
+      <p><img src="{{ profileImage}}"/></p>
+    </div>
+    
+    </a>
+
+  </div>
